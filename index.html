@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Easels Cafe | Digital Menu</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .heading { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+
+<body class="bg-[#f4efe9] text-gray-800 dark:bg-[#1a1a1a] dark:text-gray-100">
+
+<header class="text-center py-10 relative">
+  <button onclick="toggleDark()" class="absolute right-4 top-4 text-xs px-3 py-1 border rounded-full">
+    🌙 Dark
+  </button>
+  <h1 class="heading text-4xl mb-1">Easels Cafe ☕🎨</h1>
+  <p class="text-sm text-gray-600 dark:text-gray-400">
+    Where Coffee Meets Creativity
+  </p>
+</header>
+
+<section class="px-4 space-y-6 max-w-md mx-auto">
+
+  <div class="rounded-3xl overflow-hidden bg-white/70 dark:bg-white/10 backdrop-blur shadow-lg">
+    <img loading="lazy" class="w-full h-44 object-cover"
+      src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="">
+    <div class="p-5">
+      <div class="flex justify-between">
+        <h3 class="heading text-lg">Artist’s Cappuccino</h3>
+        <span class="font-semibold">₹180</span>
+      </div>
+      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+        Smooth espresso with creamy foam
+      </p>
+    </div>
+  </div>
+
+  <div class="rounded-3xl overflow-hidden bg-white/70 dark:bg-white/10 backdrop-blur shadow-lg">
+    <img loading="lazy" class="w-full h-44 object-cover"
+      src="https://images.unsplash.com/photo-1605475128023-ef35f0edc3aa" alt="">
+    <div class="p-5">
+      <div class="flex justify-between">
+        <h3 class="heading text-lg">Chocolate Fudge Brownie</h3>
+        <span class="font-semibold">₹160</span>
+      </div>
+      <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+        Perfect with hot coffee
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<section class="px-4 py-8 max-w-md mx-auto space-y-3">
+  <a href="https://wa.me/91XXXXXXXXXX"
+     class="block text-center bg-[#8c5a3c] text-white py-4 rounded-2xl font-semibold shadow-lg">
+    Order on WhatsApp
+  </a>
+  <a href="#"
+     class="block text-center border border-[#8c5a3c] text-[#8c5a3c] py-3 rounded-2xl">
+    Leave a Google Review · Get 10% Off
+  </a>
+</section>
+
+<footer class="text-center text-xs text-gray-500 pb-6">
+  Wakad · Pune · 11 AM – 11 PM
+</footer>
+
+<script>
+function toggleDark() {
+  document.documentElement.classList.toggle('dark');
+}
+</script>
+
+</body>
+</html>
